@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="image/logo1.png" />
+  <title>BitTrade </title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/stylesheet.css">
+
+</head>
+
+<body>
+
+  <!--Body-->
+  <%- include ../partials/header.ejs -%>
+  <!-- Page Content -->
+  <div class="custom-container">
+
+    <div class="row">
+
+      <%- include ../partials/slide.ejs %>
+
+    </div>
+    <!-- /.row -->
+
+
+
+
+
+    <% for(let i=1;i<=3;i++){ %>
+
+    <hr style="border:1ich solid gray" />
+    <p><small>Catogory</small></p>
+    <div class="row">
+      <!-- row start -->
+
+      <% for(let i=1;i<=6;i++){ %>
+      <!-- Card for each product -->
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+        <div class="card">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/150X150" height="150" width="150" alt=""></a>
+          <div class="card-body">
+            <p class="card-title">
+              <a href="#">Item </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <% } %>
+
+
+    </div>
+    <!-- row end -->
+    <% } %>
+
+
+  </div>
+  <!-- /.custom-container -->
+
+  </div>
+  <!-- Footer -->
+
+  <%- include ../partials/footer -%>
+  <!-- Bootstrap core JavaScript -->
+
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
